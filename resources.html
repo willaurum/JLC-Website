@@ -1,49 +1,95 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Resources - Japanese Language Club</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Resources</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="meetings.html">Meetings</a>
-        <a href="resources.html">Resources</a>
-      </nav>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span>Liberty University</span>
+            <strong>Japanese Language Club</strong>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="meetings.html">Meetings</a>
+          <a href="resources.html" aria-current="page">Resources</a>
+        </nav>
+        <a class="nav-cta" href="index.html#join">Join the Club</a>
+      </div>
     </header>
 
-    <section class="info">
-      <h2>Club Resources</h2>
-
-      <div class="card-container">
-        <div class="card">
-          <h3>Google Drive</h3>
-          <p>Access shared notes, study guides, and materials.</p>
-          <a href="#" target="_blank">Open Drive →</a>
+    <main id="main-content">
+      <section class="hero page-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="pill">Resources</p>
+            <h1 class="hero-title">Club Resources</h1>
+            <p class="hero-lede">Tools and spaces to help you practice and stay connected.</p>
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Discord</h3>
-          <p>Stay connected and practice with other members.</p>
-          <a href="#" target="_blank">Join Discord →</a>
-        </div>
+      <section class="section" id="club-resources">
+        <div class="container">
+          <h2 class="section-title">Club Resources</h2>
+          <p class="section-subtitle">Use these links to stay connected between meetings.</p>
 
-        <div class="card">
-          <h3>Canvas</h3>
-          <p>View official course content and updates.</p>
-          <a href="#" target="_blank">Open Canvas →</a>
+          <div class="card-grid">
+            <div class="card">
+              <h3>Google Drive</h3>
+              <p>Access shared notes, study guides, and materials.</p>
+              <a href="#" target="_blank" rel="noreferrer">Open Drive &rarr;</a>
+            </div>
+
+            <div class="card">
+              <h3>Discord</h3>
+              <p>Stay connected and practice with other members.</p>
+              <a href="#" target="_blank" rel="noreferrer">Join Discord &rarr;</a>
+            </div>
+
+            <div class="card">
+              <h3>Canvas</h3>
+              <p>View official course content and updates.</p>
+              <a href="#" target="_blank" rel="noreferrer">Open Canvas &rarr;</a>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section alt" id="learning-resources">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Learning Resources</h2>
+            <p class="section-subtitle">Recommended tools for practice and study.</p>
+          </div>
+          <div class="notice">[PLACEHOLDER INFO]</div>
+        </div>
+      </section>
+
+      <section class="section" id="helpful-links">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Helpful Links</h2>
+            <p class="section-subtitle">Quick access to club updates and support.</p>
+          </div>
+          <div class="notice">[PLACEHOLDER INFO]</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Liberty Japanese Language Club</p>
       </div>
-    </section>
-
-    <h1>Extra Line for SCroll bar Purposes haha.</h1>
-
-    <footer>
-      <p>© 2026 Liberty Japanese Language Club</p>
     </footer>
   </body>
 </html>

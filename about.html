@@ -1,66 +1,118 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About - Japanese Language Club</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>About Our Club</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="meetings.html">Meetings</a>
-        <a href="resources.html">Resources</a>
-      </nav>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span>Liberty University</span>
+            <strong>Japanese Language Club</strong>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="meetings.html">Meetings</a>
+          <a href="resources.html">Resources</a>
+        </nav>
+        <a class="nav-cta" href="index.html#join">Join the Club</a>
+      </div>
     </header>
 
-    <section>
-      <h2>Club Overview</h2>
-      <p>
-        The Liberty University Japanese Language Club is a community of students
-        passionate about learning the Japanese language and exploring Japanese
-        culture. Whether you're a beginner or advanced speaker, our club
-        provides a welcoming environment to grow and practice together.
-      </p>
-    </section>
-
-    <section class="info">
-      <h2>Club Leadership</h2>
-
-      <div class="card-container">
-        <div class="card">
-          <img src="images/nathan.jpg" alt="President" />
-          <h3>President</h3>
-          <p>Nathan Dotson</p>
-          <p>Leads meetings and oversees the direction of the club.</p>
+    <main id="main-content">
+      <section class="hero page-hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="pill">About</p>
+            <h1 class="hero-title">About Our Club</h1>
+            <p class="hero-lede">
+              A welcoming community for students passionate about Japanese language and culture.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-          <img src="images/danny.jpg" alt="Vice President" />
-          <h3>Vice President</h3>
-          <p>Danny [last name]</p>
-          <p>Coordinates events and assists with club operations.</p>
+      <section class="section" id="overview">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Club Overview</h2>
+            <p class="section-subtitle">
+              The Liberty University Japanese Language Club is a community of students
+              passionate about learning the Japanese language and exploring Japanese
+              culture. Whether you're a beginner or advanced speaker, our club
+              provides a welcoming environment to grow and practice together.
+            </p>
+            <div class="notice">[PLACEHOLDER INFO]</div>
+          </div>
+          <div class="card">
+            <h3>Our Focus</h3>
+            <p>
+              Practice, conversation, and cultural exploration guide everything we do,
+              from weekly meetings to special events.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-          <img src="images/trey.jpg" alt="Secretary" />
-          <h3>Secretary</h3>
-          <p>Trey Brown</p>
-          <p>Handles communication and organization.</p>
-        </div>
+      <section class="section alt" id="leadership">
+        <div class="container">
+          <h2 class="section-title">Club Leadership</h2>
+          <p class="section-subtitle">Meet the students who guide the club.</p>
+          <div class="card-grid">
+            <div class="card">
+              <img src="images/nathan.jpg" alt="Nathan Dotson, President" />
+              <p class="pill">President</p>
+              <h3>Nathan Dotson</h3>
+              <p>Leads meetings and oversees the direction of the club.</p>
+            </div>
 
-        <div class="card">
-          <img src="images/will.jpg" alt="Treasurer" />
-          <h3>Treasurer</h3>
-          <p>Will Cook</p>
-          <p>Manages finances and budgeting.</p>
+            <div class="card">
+              <img src="images/danny.jpg" alt="Danny [last name], Vice President" />
+              <p class="pill">Vice President</p>
+              <h3>Danny [last name]</h3>
+              <p>Coordinates events and assists with club operations.</p>
+            </div>
+
+            <div class="card">
+              <img src="images/trey.jpg" alt="Trey Brown, Secretary" />
+              <p class="pill">Secretary</p>
+              <h3>Trey Brown</h3>
+              <p>Handles communication and organization.</p>
+            </div>
+
+            <div class="card">
+              <img src="images/will.jpg" alt="Will Cook, Treasurer" />
+              <p class="pill">Treasurer</p>
+              <h3>Will Cook</h3>
+              <p>Manages finances and budgeting.</p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section" id="leadership-contact">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Leadership Contact</h2>
+            <p class="section-subtitle">Questions, ideas, or collaboration requests are welcome.</p>
+          </div>
+          <div class="notice">[PLACEHOLDER INFO]</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Liberty Japanese Language Club</p>
       </div>
-    </section>
-    <footer>
-      <p>© 2026 Liberty Japanese Language Club</p>
     </footer>
   </body>
 </html>
