@@ -22,19 +22,27 @@
 body {
   margin: 0;
   font-family:
-    "M PLUS 1p",
-    "Hiragino Kaku Gothic ProN",
-    "Yu Gothic",
-    "Meiryo",
-    sans-serif;
+    "M PLUS 1p", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   color: var(--ink);
   background-color: var(--paper);
   line-height: 1.6;
   min-height: 100vh;
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(247, 193, 211, 0.25), transparent 45%),
-    radial-gradient(circle at 85% 15%, rgba(240, 138, 168, 0.18), transparent 40%),
-    radial-gradient(circle at 15% 80%, rgba(210, 90, 122, 0.12), transparent 50%),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(247, 193, 211, 0.25),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(240, 138, 168, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 15% 80%,
+      rgba(210, 90, 122, 0.12),
+      transparent 50%
+    ),
     linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 247, 242, 0.9));
 }
 
@@ -102,10 +110,14 @@ a:hover {
 .brand-mark {
   width: 44px;
   height: 44px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, var(--sakura), var(--sakura-strong));
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.brand-mark::before {
+  content: "🌸";
 }
 
 .brand-text {
