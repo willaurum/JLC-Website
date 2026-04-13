@@ -1,8 +1,9 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f0e8" />
     <title>Resources - Japanese Language Club</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -29,66 +30,138 @@
 
     <main id="main-content">
       <section class="hero page-hero">
-        <div class="container">
+        <div class="container hero-grid">
           <div class="hero-card">
             <p class="pill">Resources</p>
-            <h1 class="hero-title">Club Resources</h1>
-            <p class="hero-lede">Tools and spaces to help you practice and stay connected.</p>
+            <h1 class="hero-title">Club resources</h1>
+            <p class="hero-lede">
+              A simple place for links, study tools, and shared materials.
+            </p>
           </div>
+
+          <aside class="spotlight-panel" aria-label="Resource overview">
+            <div class="spotlight-frame">
+              <span class="spotlight-label">Overview</span>
+              <h2 class="spotlight-title">Built to grow.</h2>
+              <div class="spotlight-list">
+                <div class="spotlight-item">
+                  <strong>Club Links</strong>
+                  <p>Shared spaces for members and leaders</p>
+                </div>
+                <div class="spotlight-item">
+                  <strong>Study Tools</strong>
+                  <p>Practice resources and recommendations</p>
+                </div>
+                <div class="spotlight-item">
+                  <strong>Updates</strong>
+                  <p>Quick access to useful information</p>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
 
       <section class="section" id="club-resources">
         <div class="container">
-          <h2 class="section-title">Club Resources</h2>
-          <p class="section-subtitle">Use these links to stay connected between meetings.</p>
+          <div class="section-heading">
+            <h2 class="section-title">Club Resources</h2>
+            <p class="section-subtitle">
+              Use these links to stay connected between meetings.
+            </p>
+          </div>
 
-          <div class="card-grid">
-            <div class="card">
+          <div class="resource-grid">
+            <article class="resource-card">
               <h3>Google Drive</h3>
-              <p>Access shared notes, study guides, and materials.</p>
-              <a href="#" target="_blank" rel="noreferrer">Open Drive &rarr;</a>
-            </div>
+              <p>Shared notes, study guides, and materials.</p>
+              <a class="resource-link" href="#" target="_blank" rel="noreferrer"
+                >Open Drive</a
+              >
+            </article>
 
-            <div class="card">
+            <article class="resource-card">
               <h3>Discord</h3>
               <p>Stay connected and practice with other members.</p>
-              <a href="#" target="_blank" rel="noreferrer">Join Discord &rarr;</a>
-            </div>
+              <a class="resource-link" href="#" target="_blank" rel="noreferrer"
+                >Join Discord</a
+              >
+            </article>
 
-            <div class="card">
+            <article class="resource-card">
               <h3>Canvas</h3>
-              <p>View official course content and updates.</p>
-              <a href="#" target="_blank" rel="noreferrer">Open Canvas &rarr;</a>
-            </div>
+              <p>View course content and updates.</p>
+              <a class="resource-link" href="#" target="_blank" rel="noreferrer"
+                >Open Canvas</a
+              >
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section alt" id="learning-resources">
         <div class="container split">
-          <div>
-            <h2 class="section-title">Learning Resources</h2>
-            <p class="section-subtitle">Recommended tools for practice and study.</p>
+          <div class="stack">
+            <div class="section-heading">
+              <h2 class="section-title">Learning Resources</h2>
+              <p class="section-subtitle">Recommended tools for practice and study.</p>
+            </div>
           </div>
-          <div class="notice">[PLACEHOLDER INFO]</div>
+          <div class="placeholder-box">
+            <strong>Study Tools</strong>
+            <p>[PLACEHOLDER INFO]</p>
+          </div>
         </div>
       </section>
 
       <section class="section" id="helpful-links">
         <div class="container split">
-          <div>
-            <h2 class="section-title">Helpful Links</h2>
-            <p class="section-subtitle">Quick access to club updates and support.</p>
+          <div class="stack">
+            <div class="section-heading">
+              <h2 class="section-title">Helpful Links</h2>
+              <p class="section-subtitle">Quick access to club updates and support.</p>
+            </div>
           </div>
-          <div class="notice">[PLACEHOLDER INFO]</div>
+          <div class="placeholder-box">
+            <strong>Quick Links</strong>
+            <p>[PLACEHOLDER INFO]</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="resource-notes">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-title">More Resources Later</h2>
+            <p class="section-subtitle">
+              This section is ready for level-based materials and additional
+              links.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="card">
+              <h3>Beginner Track</h3>
+              <p>Add starter resources here if you want to organize by level.</p>
+            </article>
+            <article class="placeholder-box">
+              <strong>Additional Resource Block</strong>
+              <p>[PLACEHOLDER INFO]</p>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; 2026 Liberty Japanese Language Club</p>
+        <div class="footer-card footer-inner">
+          <div>
+            <p class="footer-mark">Resource Hub</p>
+            <p class="footer-copy">Liberty University</p>
+          </div>
+          <p class="footer-copy">&copy; 2026 Liberty Japanese Language Club</p>
+        </div>
       </div>
     </footer>
   </body>
