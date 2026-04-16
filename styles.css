@@ -378,6 +378,17 @@ button:hover {
   gap: 0.85rem;
 }
 
+.resources-hero .hero-grid {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.resources-hero .hero-card {
+  display: grid;
+  align-content: start;
+  max-width: 760px;
+}
+
 .spotlight-label,
 .info-item strong,
 .stat-label,
