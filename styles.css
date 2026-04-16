@@ -448,7 +448,8 @@ button:hover {
 .people-grid,
 .info-grid,
 .stat-grid,
-.mini-grid {
+.mini-grid,
+.events-list {
   display: grid;
   gap: 1rem;
 }
@@ -467,6 +468,17 @@ button:hover {
 .info-grid,
 .stat-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.events-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.events-list {
+  grid-template-columns: 1fr;
 }
 
 .card,
@@ -608,7 +620,8 @@ button:hover {
   .feature-grid,
   .people-grid,
   .info-grid,
-  .stat-grid {
+  .stat-grid,
+  .events-layout {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -628,7 +641,8 @@ button:hover {
   .info-grid,
   .stat-grid,
   .mini-grid,
-  .timeline-card {
+  .timeline-card,
+  .events-layout {
     grid-template-columns: 1fr;
   }
 
