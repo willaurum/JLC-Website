@@ -11,10 +11,10 @@
   --accent-soft: #f4dce6;
   --shadow-sm: 0 8px 20px rgba(90, 54, 72, 0.06);
   --shadow-md: 0 18px 40px rgba(90, 54, 72, 0.08);
-  --radius-xl: 24px;
-  --radius-lg: 18px;
-  --radius-md: 14px;
-  --radius-sm: 999px;
+  --radius-xl: 14px;
+  --radius-lg: 8px;
+  --radius-md: 4px;
+  --radius-sm: 0;
   --max-width: 1120px;
 }
 
@@ -36,6 +36,16 @@ body {
   color: var(--text);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.2;
+  background-image: linear-gradient(rgba(185, 104, 135, 0.08) 1px, transparent 1px);
+  background-size: 100% 28px;
 }
 
 img {
@@ -89,7 +99,7 @@ button:hover {
   z-index: 30;
   background: rgba(255, 248, 250, 0.94);
   border-bottom: 1px solid rgba(228, 198, 211, 0.85);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
 }
 
 .header-inner {
@@ -111,7 +121,7 @@ button:hover {
   width: 44px;
   height: 44px;
   flex: 0 0 44px;
-  border-radius: 14px;
+  border-radius: 2px;
   border: 1px solid var(--line-strong);
   background: linear-gradient(180deg, #fff3f7, #f6dfe8);
   position: relative;
@@ -160,15 +170,17 @@ button:hover {
 }
 
 .site-nav a {
-  padding: 0.55rem 0.9rem;
+  padding: 0.55rem 0.2rem;
   color: var(--text-soft);
   font-weight: 600;
+  border-bottom: 2px solid transparent;
 }
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  background: var(--surface);
   color: var(--text);
+  background: transparent;
+  border-bottom-color: var(--accent);
 }
 
 .nav-cta {
@@ -180,6 +192,7 @@ button:hover {
   background: linear-gradient(180deg, #d685a5, #c87192);
   color: #fff;
   font-weight: 600;
+  box-shadow: var(--shadow-sm);
 }
 
 .nav-cta:hover,
@@ -214,13 +227,15 @@ button:hover {
   background: var(--surface);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-sm);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-card,
 .spotlight-panel,
 .cta-panel,
 .footer-card {
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-md);
 }
 
 .card,
@@ -230,13 +245,22 @@ button:hover {
 .placeholder-box,
 .resource-card,
 .stat-band {
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
 }
 
 .hero-card,
 .spotlight-panel,
 .cta-panel {
   padding: 1.75rem;
+}
+
+.hero-card {
+  border-left: 4px solid var(--accent);
+}
+
+.spotlight-panel,
+.cta-panel {
+  border-top: 4px solid var(--accent-soft);
 }
 
 .page-hero .hero-card {
@@ -337,6 +361,7 @@ button:hover {
   background: var(--surface);
   color: var(--text);
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .button.primary {
@@ -374,6 +399,8 @@ button:hover {
 .spotlight-item {
   padding: 0.85rem 0;
   border-top: 1px solid var(--line);
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--accent-soft);
 }
 
 .section {
@@ -390,6 +417,8 @@ button:hover {
   display: grid;
   gap: 0.45rem;
   margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .section-title {
@@ -437,6 +466,7 @@ button:hover {
 .resource-card,
 .stat-band {
   padding: 1.2rem;
+  border-top: 3px solid var(--accent-soft);
 }
 
 .card h3,
@@ -490,7 +520,7 @@ button:hover {
   place-items: center;
   width: 64px;
   height: 64px;
-  border-radius: 18px;
+  border-radius: 2px;
   background: #f3dce5;
   color: var(--accent);
   font-weight: 700;
@@ -514,6 +544,7 @@ button:hover {
   width: fit-content;
   color: var(--accent);
   font-weight: 600;
+  border-bottom: 1px solid currentColor;
 }
 
 .stat-value {
@@ -528,6 +559,7 @@ button:hover {
 
 .footer-card {
   padding: 1.15rem 1.25rem;
+  border-top: 4px solid var(--accent-soft);
 }
 
 .footer-inner {
